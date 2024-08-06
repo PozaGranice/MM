@@ -17,21 +17,21 @@ function addTodoItem(text) {
   todoText.readOnly = true;
 
   const editBtn = document.createElement("button");
-  editBtn.innerText = "Edit";
+  editBtn.innerText = "Edytuj";
   editBtn.className = "edit-btn";
   editBtn.addEventListener("click", function () {
-    if (editBtn.innerText === "Edit") {
+    if (editBtn.innerText === "Edytuj") {
       todoText.readOnly = false;
       todoText.focus();
-      editBtn.innerText = "Save";
+      editBtn.innerText = "Zapisz";
     } else {
       todoText.readOnly = true;
-      editBtn.innerText = "Edit";
+      editBtn.innerText = "Edytuj";
     }
   });
 
   const deleteBtn = document.createElement("button");
-  deleteBtn.innerText = "Delete";
+  deleteBtn.innerText = "Zapisz";
   deleteBtn.className = "delete-btn";
   deleteBtn.addEventListener("click", function () {
     todoList.removeChild(listItem);
