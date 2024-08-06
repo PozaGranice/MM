@@ -23,7 +23,7 @@ function addTodoItem(text) {
     if (editBtn.innerText === "Edytuj") {
       todoText.readOnly = false;
       todoText.focus();
-      editBtn.innerText = "Zapisz";
+      editBtn.innerText = "Zatwierdź zmniany";
     } else {
       todoText.readOnly = true;
       editBtn.innerText = "Edytuj";
@@ -31,7 +31,7 @@ function addTodoItem(text) {
   });
 
   const deleteBtn = document.createElement("button");
-  deleteBtn.innerText = "Zapisz";
+  deleteBtn.innerText = "Usuń";
   deleteBtn.className = "delete-btn";
   deleteBtn.addEventListener("click", function () {
     todoList.removeChild(listItem);
